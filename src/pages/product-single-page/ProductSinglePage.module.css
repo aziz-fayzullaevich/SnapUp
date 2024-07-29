@@ -1,0 +1,249 @@
+.mainBlock {
+    padding: 40px 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.innerMainBlock {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 12px -3px rgba(0, 0, 0, 0.2);
+}
+
+.mainImgBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.mainImgBlock>img {
+    width: 600px;
+    height: 400px;
+}
+
+.inNextImgBlock {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inNextImgBlock>img {
+    width: 100px;
+    height: 100px;
+}
+
+.singler,
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 18px;
+    color: rgb(118, 118, 118);
+}
+
+.info,
+.innerInfo {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    gap: 50px;
+}
+
+.innerInfo {
+    gap: 10px;
+    border-right: 2px solid rgba(0, 0, 85);
+    padding-right: 50px;
+}
+
+.innerInfo:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.innerInfo>p {
+    color: rgba(0, 0, 85);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.innerInfo>span {
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.priceBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.innerPriceBlock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.oldPrice {
+    color: rgb(118, 118, 118);
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.priceDesc {
+    color: rgb(118, 118, 118);
+}
+
+.newPrice {
+    color: rgba(0, 0, 85);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.newPriceBox {
+    background-color: rgba(0, 0, 85);
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.quantityBlock,
+.addedBlock {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.quantityBlock>p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantityBlock>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid rgb(118, 118, 118);
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+.quantityBlock>div>button {
+    display: flex;
+    align-items: center;
+}
+
+.quantityBlock>div>span {
+    font-weight: bold;
+}
+
+.addToCards {
+    border: 2px solid rgba(0, 0, 85);
+    background-color: rgba(0, 0, 85, 0.345);
+    color: rgba(0, 0, 85);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.addedIcon {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.buyNow {
+    background-color: rgba(0, 0, 85);
+    color: #fff;
+    border: 5px solid rgba(0, 0, 85);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:999px) {
+    .innerMainBlock {
+        flex-direction: column;
+    }
+
+    .mainImgBlock>img {
+        width: 550px;
+        height: auto;
+    }
+
+    .inNextImgBlock {
+        justify-content: center;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: repeat((auto-fit, minmax(200px, 1fr)));
+    }
+
+    .innerInfo {
+        border-right: none;
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .desc,
+    .innerInfo>p,
+    .innerInfo>span,
+    .oldPrice,
+    .quantityBlock>p {
+        font-size: 16px;
+    }
+
+    .newPrice {
+        font-size: 20px;
+    }
+
+    .newPriceBox {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+
+    .quantityBlock>div>span {
+        font-size: 14px;
+    }
+
+    .addToCards,
+    .buyNow {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .innerPriceBlock:first-child {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .addedBlock {
+        flex-direction: column;
+    }
+}

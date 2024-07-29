@@ -1,0 +1,21 @@
+.mainBlock {
+    padding: 40px 0;
+}
+
+.title {
+    padding: 10px 0;
+    box-shadow: 0 0 12px -3px rgba(0, 0, 0, 0.5);
+    border-left: 6px solid rgb(0, 0, 85);
+}
+
+.title>h2 {
+    padding-left: 30px;
+    color: gray;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:700px) {
+    .title>h2 {
+        font-size: 18px;
+    }
+}

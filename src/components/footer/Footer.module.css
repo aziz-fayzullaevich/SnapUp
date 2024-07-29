@@ -1,0 +1,24 @@
+.footerBlock {
+    background-color: rgba(0, 0, 85);
+    padding: 40px 0;
+}
+
+.innerFooterBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.innerFooterBlock>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.innerFooterBlock>div>a,
+.innerFooterBlock>span {
+    text-transform: capitalize;
+    color: #fff;
+}

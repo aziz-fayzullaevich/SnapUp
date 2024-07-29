@@ -1,0 +1,41 @@
+.correctBox {
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+
+    position: absolute;
+    left: 100%;
+    bottom: 30px;
+    transform: translateX(-100%);
+}
+
+.innerMainBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerMainBlock>img {
+    width: 30px;
+}
+
+.correctBox>p {
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (max-width:900px) {
+    .correctBox {
+        max-width: 250px;
+        left: 50%;
+        bottom: -100%;
+        transform: translateX(-50%);
+    }
+}

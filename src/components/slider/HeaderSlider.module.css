@@ -1,0 +1,14 @@
+.innerSlider {
+    padding: 40px 0;
+}
+
+.sliderItem {
+    height: 300px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .sliderItem {
+        height: 100%;
+    }
+}

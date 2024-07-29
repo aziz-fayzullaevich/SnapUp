@@ -1,0 +1,225 @@
+.mainCartPage {
+    border: 1px solid gray;
+    padding: 40px 0;
+    background-color: rgba(245, 245, 245);
+}
+
+.inMainCartPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartTitle {
+    font-size: 30px;
+    color: rgba(0, 0, 85);
+    letter-spacing: 1px;
+}
+
+.cartTablse {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0, 0, 85);
+}
+
+.tableHead {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+    padding: 5px 0;
+}
+
+.tableBody {
+    max-height: 300px;
+    height: 100%;
+    overflow: auto;
+}
+
+.cartCth>span {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 85);
+}
+
+.cartCtr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.cartCth,
+.cartCtd {
+    max-width: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.titleCart {
+    max-width: 200px;
+    margin: auto;
+}
+
+.qtyBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid gray;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.qtyBlock>button {
+    display: flex;
+}
+
+.qtyBlock>span {
+    font-weight: bold;
+}
+
+.deleteBtn {
+    font-size: 20px;
+    color: rgba(0, 0, 85);
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.deleteBtn:hover {
+    opacity: 1;
+}
+
+.empryCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.empryCart>img {
+    width: 250px;
+}
+
+.empryCart>span {
+    font-size: 40px;
+    font-weight: bold;
+    color: gray;
+}
+
+.empryCart>a {
+    color: rgba(0, 0, 85);
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+
+.clearCart>button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 85);
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: rgba(0, 0, 85, 0.252);
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0, 0, 85);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.clearCart>button:hover {
+    background-color: rgba(0, 0, 85);
+    color: #fff;
+    box-shadow: 0 0 12px -3px rgba(0, 0, 0, 0.6);
+}
+
+.clearCartsBtn {
+    font-size: 22px;
+}
+
+.bottomRight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.totalPriceBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.totalPriceBlock>p,
+.totalPriceBlock>span {
+    font-size: 17px;
+}
+
+.totalPriceBlock>p>span,
+.totalPriceBlock>span>span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.getForm {
+    background-color: rgba(0, 0, 85);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.getForm:hover {
+    box-shadow: 0 0 12px -3px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width:600px) {
+    .mainCartPage {
+        padding: 20px 0;
+    }
+
+    .cartTitle {
+        font-size: 22px;
+    }
+
+    .tableHead {
+        display: none;
+    }
+
+    .qtyBlock {
+        max-width: 50px;
+        gap: 10px;
+    }
+
+    .qtyBlock>button {
+        font-size: 10px;
+    }
+
+    .qtyBlock>span {
+        font-size: 12px;
+    }
+
+    .cartCth,
+    .cartCtd {
+        font-size: 15px;
+    }
+
+    .empryCart>img {
+        width: 150px;
+    }
+
+    .empryCart>span {
+        font-size: 28px;
+    }
+
+
+    .bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

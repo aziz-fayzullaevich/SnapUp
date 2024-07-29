@@ -1,0 +1,55 @@
+.desc {
+    color: rgba(0, 0, 85);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cartModalItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #dfdede80;
+    margin: 5px;
+    padding: 10px;
+}
+
+.cartModalItem>img {
+    width: 80px;
+    height: 80px;
+}
+
+.cartModalItem>h3 {
+    color: rgba(0, 0, 85);
+    font-size: 14px;
+}
+
+.cartModalPrice {
+    color: rgba(0, 0, 85);
+    font-weight: bold;
+
+}
+
+.linkToCart {
+    background-color: rgba(0, 0, 85);
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+.notProduct {
+    text-align: center;
+    padding: 10px;
+}
+
+.notProduct>img {
+    width: 150px;
+}
+
+
+.notProduct>p {
+    font-size: 18px;
+    font-weight: bold;
+}
